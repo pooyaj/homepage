@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Lato');
+
+$purple: #8a4d76;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+
+$family-primary: 'Lato', sans-serif;
+$family-secondary: 'Alegreya', sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $purple;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+
+@import '../../node_modules/bulma/bulma.sass';
+
+.title,
+h1 {
+  font-family: $family-secondary;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+h2 {
+  line-height: 1.5;
+}
