@@ -1,0 +1,69 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+
+export default props => {
+  return (
+    <div class="columns">
+      <div className="column is-one-third has-text-centered">
+        Copyright 2018.
+      </div>
+      <div class="column column-right">
+        <nav class="tabs is-right">
+          <ul>
+            <li>
+              <a
+                href="http://instagram.com/pooyaj"
+                aria-label="Instagram"
+                alt="Instagram"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/pooyaj"
+                aria-label="Twitter"
+                alt="Twitter"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://ca.linkedin.com/pub/pooya-jaferian/10/535/613"
+                aria-label="LinkedIn"
+                alt="LinkedIn"
+              >
+                <FontAwesomeIcon icon={faTwitter} size="lg" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/pooyaj"
+                aria-label="Github"
+                alt="Github"
+              >
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:pooyaj@gmail.com"
+                aria-label="Email Pooya"
+                alt="Email Pooya"
+              >
+                <FontAwesomeIcon icon={faEnvelope} size="lg" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  );
+};

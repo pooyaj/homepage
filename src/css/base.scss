@@ -6,16 +6,22 @@ $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
+$color1: rgba(244, 208, 111, 1);
+$color2: rgba(255, 136, 17, 1);
+$color3: rgba(157, 217, 210, 1);
+$color4: rgba(255, 248, 240, 1);
+$color5: rgba(57, 47, 90, 1);
+
 $family-primary: 'Lato', sans-serif;
 $family-secondary: 'Alegreya', sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $purple;
+$grey-dark: $color5;
+$grey-light: $color1;
+$primary: $color2;
+$link: $color2;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
-$body-background-color: $beige-lighter;
+$body-background-color: $color4;
 $control-border-width: 2px;
 
 @import '../../node_modules/bulma/bulma.sass';
