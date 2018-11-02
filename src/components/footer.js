@@ -30,7 +30,7 @@ export default props => {
                 aria-label="Twitter"
                 alt="Twitter"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                <FontAwesomeIcon icon={faTwitter} size="lg" />
               </a>
             </li>
             <li>
@@ -39,7 +39,7 @@ export default props => {
                 aria-label="LinkedIn"
                 alt="LinkedIn"
               >
-                <FontAwesomeIcon icon={faTwitter} size="lg" />
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
               </a>
             </li>
 
