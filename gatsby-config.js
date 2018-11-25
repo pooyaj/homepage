@@ -2,7 +2,7 @@ const path = require(`path`);
 
 module.exports = {
   plugins: [
-    { resolve: `gatsby-plugin-sass` },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-manifest`,

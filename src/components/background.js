@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import Trianglify from 'trianglify';
 
 export default class Background extends Component {
   componentDidMount() {
     window.addEventListener('resize', this.debounceResize.bind(this));
+    if (process.env.NODE_ENV !== `production`) {
+      this.Trianglify = require('trianglify');
+    }
+
     this.renderCanvas();
   }
 
@@ -21,7 +24,7 @@ export default class Background extends Component {
   }
 
   renderCanvas = () => {
-    Trianglify({
+    this.Trianglify({
       width: this.canvas.offsetWidth,
       height: this.canvas.offsetHeight,
       cell_size: 180,
