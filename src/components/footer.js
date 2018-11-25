@@ -9,9 +9,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 export default props => {
   return (
     <div class="columns">
-      <div className="column is-one-third has-text-centered">
-        Copyright 2018.
-      </div>
+      <div className="column is-one-third copyright">Copyright 2018.</div>
       <div class="column column-right">
         <nav class="tabs is-right">
           <ul>
@@ -21,7 +19,7 @@ export default props => {
                 aria-label="Instagram"
                 alt="Instagram"
               >
-                <FontAwesomeIcon icon={faInstagram} size="lg" />
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </li>
             <li>
@@ -30,7 +28,7 @@ export default props => {
                 aria-label="Twitter"
                 alt="Twitter"
               >
-                <FontAwesomeIcon icon={faTwitter} size="lg" />
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
             </li>
             <li>
@@ -39,7 +37,7 @@ export default props => {
                 aria-label="LinkedIn"
                 alt="LinkedIn"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
             </li>
 
@@ -49,7 +47,7 @@ export default props => {
                 aria-label="Github"
                 alt="Github"
               >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </li>
             <li>
@@ -58,7 +56,7 @@ export default props => {
                 aria-label="Email Pooya"
                 alt="Email Pooya"
               >
-                <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                <FontAwesomeIcon icon={faEnvelope} size="2x" />
               </a>
             </li>
           </ul>
