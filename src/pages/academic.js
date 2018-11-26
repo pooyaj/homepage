@@ -6,8 +6,8 @@ class Academic extends React.Component {
     return (
       <Layout>
         <div className="container ">
-          <h1 className="title">Academic Background</h1>
-          <p>
+          <h1 className="title is-size-2-mobile">Academic Background</h1>
+          <p className="is-size-6-mobile">
             My PhD research topic was an intersection of Human-Computer
             Interaction (HCI) and Computer Security. I researched how IT
             security professionals perform their job, and explored the usability

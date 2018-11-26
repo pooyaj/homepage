@@ -5,9 +5,9 @@ class Work extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="container ">
-          <h1 className="title">Work</h1>
-          <p>
+        <div className="container">
+          <h1 className="title is-size-2-mobile">Work</h1>
+          <p className="is-size-6-mobile">
             I'm currently leading the frontend team at Parsable. We use React
             and Go to build a large-scale industry 4.0 collaboration and
             workflow platform to help the world’s largest industrial companies
