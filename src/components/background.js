@@ -3,11 +3,8 @@ import React, { Component } from 'react';
 export default class Background extends Component {
   componentDidMount() {
     window.addEventListener('resize', this.debounceResize.bind(this));
-    if (process.env.NODE_ENV !== `production`) {
-      this.Trianglify = require('trianglify');
-    }
 
-    this.renderCanvas();
+    // this.renderCanvas();
   }
 
   debounceResize() {
@@ -24,12 +21,17 @@ export default class Background extends Component {
   }
 
   renderCanvas = () => {
-    this.Trianglify({
-      width: this.canvas.offsetWidth,
-      height: this.canvas.offsetHeight,
-      cell_size: 180,
-      x_colors: ['#fff', '#e8ecf1', '#67809f']
-    }).canvas(this.canvas);
+    /*
+    this.Trianglify = require('trianglify');
+
+    this.Trianglify &&
+      this.Trianglify({
+        width: this.canvas.offsetWidth,
+        height: this.canvas.offsetHeight,
+        cell_size: 180,
+        x_colors: ['#fff', '#e8ecf1', '#67809f']
+      }).canvas(this.canvas);
+      */
   };
 
   render() {
