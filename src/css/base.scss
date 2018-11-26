@@ -64,3 +64,7 @@ p {
   background-color: $grey-dark;
   height: 2px;
 }
+
+.columns:last-child {
+  margin-bottom: 0px;
+}

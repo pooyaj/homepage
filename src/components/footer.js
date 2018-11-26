@@ -9,7 +9,9 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 export default props => {
   return (
     <div class="columns">
-      <div className="column is-one-third copyright">Copyright 2018.</div>
+      <div className="column is-one-third copyright is-hidden-mobile">
+        Copyright 2018.
+      </div>
       <div class="column column-right">
         <nav class="tabs is-right">
           <ul>

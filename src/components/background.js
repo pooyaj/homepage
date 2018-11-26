@@ -36,7 +36,7 @@ export default class Background extends Component {
       <canvas
         ref={c => (this.canvas = c)}
         style={{
-          position: 'absolute',
+          position: 'fixed',
           width: '100%',
           height: '100%'
         }}

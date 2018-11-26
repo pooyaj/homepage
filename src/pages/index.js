@@ -17,8 +17,10 @@ class Course extends React.Component {
               </figure>
             </div>
             <div className="column is-8 ">
-              <h1 className="title">Pooya Jaferian</h1>
-              <h2 className="subtitle">
+              <h1 className="title is-size-2-mobile has-text-centered-touch">
+                Pooya Jaferian
+              </h1>
+              <h2 className="subtitle is-size-5-mobile has-text-centered-touch">
                 PhD in Computer Engineering from{' '}
                 <a
                   href="https://www.ubc.ca"
