@@ -10,14 +10,10 @@ export default class Background extends Component {
     this.renderCanvas();
   }
 
-  debounceResize() {
+  debounceResize = () => {
     clearTimeout(this.resize_timer);
-    this.resize_timer = setTimeout(this.handleResize.bind(this), 500);
-  }
-
-  handleResize(e) {
-    this.renderCanvas();
-  }
+    this.resize_timer = setTimeout(this.renderCanvas.bind(this), 500);
+  };
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.debounceResize.bind(this));
