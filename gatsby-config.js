@@ -1,9 +1,11 @@
 const path = require(`path`);
+require('dotenv').config({
+  path: `.env`
+});
 
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,6 +18,13 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: 'pooya',
+        accessToken: process.env.API_KEY
+      }
+    }
   ]
 };
