@@ -10,7 +10,7 @@ export default props => {
   return (
     <div class="columns">
       <div className="column is-one-third copyright is-hidden-mobile">
-        Copyright 2018.
+        Copyright 2019.
       </div>
       <div class="column column-right">
         <nav class="tabs is-right">
@@ -35,7 +35,7 @@ export default props => {
             </li>
             <li>
               <a
-                href="http://ca.linkedin.com/pub/pooya-jaferian/10/535/613"
+                href="https://www.linkedin.com/in/pooyajaferian/"
                 aria-label="LinkedIn"
                 alt="LinkedIn"
               >
