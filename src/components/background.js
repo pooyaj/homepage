@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 export default class Background extends Component {
+  static defaultProps = { colors: ['#ccc', '#eee', '#bbb'] };
+
   componentDidMount() {
     window.addEventListener('resize', this.debounceResize.bind(this));
     this.Trianglify = require('trianglify');
@@ -27,7 +29,7 @@ export default class Background extends Component {
         width: this.canvas.offsetWidth,
         height: this.canvas.offsetHeight,
         cell_size: 180,
-        x_colors: ['#fff', '#e8ecf1', '#67809f']
+        x_colors: this.props.colors
       }).canvas(this.canvas);
   };
 

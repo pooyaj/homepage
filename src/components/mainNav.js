@@ -43,6 +43,7 @@ export default class MainNav extends Component {
             <ListLink to="/">Home</ListLink>
             <ListLink to="/work/">Work</ListLink>
             <ListLink to="/academic/">Academic</ListLink>
+            <ListLink to="/resume/">Resume</ListLink>
           </div>
         </div>
       </nav>

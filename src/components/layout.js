@@ -8,7 +8,7 @@ import Background from './background';
 
 export default class layout extends Component {
   render() {
-    const { children } = this.props;
+    const { children, isResume } = this.props;
 
     return (
       <Fragment>
@@ -25,11 +25,15 @@ export default class layout extends Component {
         </Helmet>
 
         <section className="hero is-grey is-fullheight">
-          <Background />
+          <Background
+            colors={isResume ? ['#eee', '#fff', '#eee'] : undefined}
+          />
           <div className="hero-head">
             <MainNav />
           </div>
-          <div className="hero-body">{children}</div>
+          <div className={isResume ? 'resume-container' : 'hero-body'}>
+            {children}
+          </div>
           <div class="hero-foot container">
             <Footer />
           </div>
