@@ -11,7 +11,7 @@ class Course extends React.Component {
             <div className="column is-4">
               <figure
                 className="image"
-                style={{ margin: '0 auto', width: '150px', height: '150px' }}
+                style={{ margin: '0 auto', width: '170px', height: '170px' }}
               >
                 <img className="is-rounded shadow" src={main} alt="Main" />
               </figure>
