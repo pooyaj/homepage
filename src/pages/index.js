@@ -31,11 +31,11 @@ class Course extends React.Component {
                 </a>{' '}
                 <br /> Engineering Manager at{' '}
                 <a
-                  href="https://www.parsable.com"
-                  aria-label="Parsable Website"
-                  alt="Parsable Website"
+                  href="https://www.atrium.co/"
+                  aria-label="Atrium"
+                  alt="Atrium"
                 >
-                  Parsable
+                  Atrium
                 </a>
               </h2>
             </div>
