@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Lato|Black+Han+Sans');
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Lato|Black+Han+Sans");
 
 $purple: #8a4d76;
 $pink: #fa7c91;
@@ -12,11 +12,11 @@ $color3: rgba(157, 217, 210, 1);
 $color4: rgba(255, 248, 240, 1);
 $color5: rgba(57, 47, 90, 1);
 
-$family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu,
+$family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,
   Cantarell, Roboto, Helvetica, Arial, Noto Sans, sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-$family-secondary: 'Black Han Sans', 'Alegreya', sans-serif;
+$family-secondary: "Black Han Sans", "Alegreya", sans-serif;
 $grey-dark: $color5;
 $grey-light: $color1;
 $primary: $color2;
@@ -27,7 +27,7 @@ $fullhd-enabled: false;
 $body-background-color: $color4;
 $control-border-width: 2px;
 
-@import '../../node_modules/bulma/bulma.sass';
+@import "../../node_modules/bulma/bulma.sass";
 
 .title,
 h1 {
@@ -56,10 +56,8 @@ p {
   line-height: 1.5;
 }
 
-.shadow {
-  -moz-box-shadow: 0 0 1px $grey-dark;
-  -webkit-box-shadow: 0 0 1px $grey-dark;
-  box-shadow: 0 0 1px $grey-dark;
+.round-border {
+  border-radius: 8px;
 }
 
 .copyright {
@@ -185,4 +183,23 @@ a.navbar-item,
     background-color: #f1f5f7;
     white-space: nowrap;
   }
+}
+
+.hoverable figure img {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.9;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.hoverable figure:hover img {
+  -webkit-transform: rotate(15deg) scale(1.4);
+  transform: rotate(15deg) scale(1.4);
+
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
 }

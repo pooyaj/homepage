@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
-import { Link } from 'gatsby';
+import React, { Component } from "react";
+import classnames from "classnames";
+import { Link } from "gatsby";
 
 const ListLink = props => (
   <Link to={props.to} className="navbar-item">
@@ -13,12 +13,12 @@ export default class MainNav extends Component {
 
   render() {
     const burgerClasses = classnames({
-      'navbar-burger': true,
-      'is-active': this.state.expanded
+      "navbar-burger": true,
+      "is-active": this.state.expanded
     });
     const menuClsses = classnames({
-      'navbar-menu': true,
-      'is-active': this.state.expanded
+      "navbar-menu": true,
+      "is-active": this.state.expanded
     });
     return (
       <nav className="navbar is-dark">
@@ -41,8 +41,6 @@ export default class MainNav extends Component {
           </div>
           <div id="navMenu" className={menuClsses}>
             <ListLink to="/">Home</ListLink>
-            <ListLink to="/work/">Work</ListLink>
-            <ListLink to="/academic/">Academic</ListLink>
             <ListLink to="/resume/">Resume</ListLink>
           </div>
         </div>
