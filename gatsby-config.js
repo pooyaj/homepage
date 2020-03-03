@@ -6,6 +6,7 @@ require("dotenv").config({
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
