@@ -186,8 +186,8 @@ a.navbar-item,
 }
 
 .hoverable figure img {
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1);
+  -webkit-transform: rotate(-1deg) scale(1.1);
+  transform: rotate(-1deg) scale(1.1);
 
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -196,8 +196,8 @@ a.navbar-item,
   transition: 0.5s ease-in-out;
 }
 .hoverable figure:hover img {
-  -webkit-transform: rotate(15deg) scale(1.4);
-  transform: rotate(15deg) scale(1.4);
+  -webkit-transform: rotate(0deg) scale(1.15);
+  transform: rotate(0deg) scale(1.15);
 
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
