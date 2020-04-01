@@ -43,7 +43,7 @@ module.exports = {
         // if false, see below on how to track pageviews manually
         trackPage: true,
 
-        delayLoad: true,
+        delayLoad: false,
 
         // number (default to 1000); time to wait after scroll or route change
         // To be used when `delayLoad` is set to `true`
