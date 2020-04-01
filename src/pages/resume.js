@@ -1,7 +1,7 @@
-import React from 'react';
-import Layout from '../components/layout';
-import { graphql } from 'gatsby';
-import { Parser } from 'html-to-react';
+import React from "react";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import { Parser } from "html-to-react";
 
 const htmlToReactParser = new Parser();
 
@@ -37,14 +37,16 @@ export const pageData = graphql`
           html
         }
         body {
-          items {
-            content {
-              html
+          ... on PrismicResumeBodySection {
+            items {
+              content {
+                html
+              }
             }
-          }
-          primary {
-            title {
-              text
+            primary {
+              title {
+                text
+              }
             }
           }
         }

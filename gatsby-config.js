@@ -24,27 +24,30 @@ module.exports = {
       resolve: "gatsby-source-prismic",
       options: {
         repositoryName: "pooya",
-        accessToken: process.env.API_KEY
+        accessToken: process.env.API_KEY,
+        schemas: { resume: require("./src/schemas/resume.json") }
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-segment-js`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-34710465-1",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // Setting this parameter is optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "0",
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10
+        prodKey: process.env.SEGMENT_WRITE_KEY,
+
+        // if you have a development env for your segment account, paste that key here
+        // when process.env.NODE_ENV === 'development'
+        // optional; non-empty string
+        devKey: process.env.SEGMENT_WRITE_KEY,
+
+        // boolean (defaults to false) on whether you want
+        // to include analytics.page() automatically
+        // if false, see below on how to track pageviews manually
+        trackPage: true,
+
+        delayLoad: true,
+
+        // number (default to 1000); time to wait after scroll or route change
+        // To be used when `delayLoad` is set to `true`
+        delayLoadTime: 1000
       }
     }
   ]

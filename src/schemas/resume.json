@@ -1,0 +1,55 @@
+{
+  "Main": {
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Name",
+        "placeholder": "Name"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "description",
+        "placeholder": "enter description",
+        "labels": ["grey"]
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "section": {
+            "type": "Slice",
+            "fieldset": "section",
+            "description": "section",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "title"
+                }
+              }
+            },
+            "repeat": {
+              "content": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, hyperlink, list-item, o-list-item",
+                  "label": "content",
+                  "labels": ["grey", "headline"]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
