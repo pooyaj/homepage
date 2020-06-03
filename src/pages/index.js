@@ -36,11 +36,11 @@ class Course extends React.Component {
                 </a>{" "}
                 <br /> Engineering Manager at{" "}
                 <a
-                  href="https://www.atrium.co/"
-                  aria-label="Atrium"
-                  alt="Atrium"
+                  href="https://www.segment.com/"
+                  aria-label="Segment"
+                  alt="Segment"
                 >
-                  Atrium
+                  Segment
                 </a>
               </h2>
             </div>
