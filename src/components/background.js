@@ -24,9 +24,9 @@ export default class Background extends Component {
       this.Trianglify({
         width: this.canvas.offsetWidth,
         height: this.canvas.offsetHeight,
-        cell_size: 180,
-        x_colors: this.props.colors
-      }).canvas(this.canvas);
+        cellSize: 180,
+        xColors: this.props.colors
+      }).toCanvas(this.canvas);
   };
 
   render() {
