@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import Footer from './footer';
 import MainNav from './mainNav';
 import '../css/base.scss';

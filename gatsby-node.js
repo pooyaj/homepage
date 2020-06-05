@@ -4,14 +4,13 @@ exports.onCreateWebpackConfig = ({
   loaders,
   plugins,
   actions,
-  getConfig
+  getConfig,
 }) => {
   if (stage === 'build-html') {
-    console.log('change WP config', getConfig());
     actions.setWebpackConfig({
       externals: {
-        canvas: true
-      }
+        canvas: true,
+      },
     });
   }
 };
