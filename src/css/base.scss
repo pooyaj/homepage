@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya|Lato|Black+Han+Sans");
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Black+Han+Sans&display=swap');
 
 $purple: #8a4d76;
 $pink: #fa7c91;
@@ -12,11 +12,11 @@ $color3: rgba(157, 217, 210, 1);
 $color4: rgba(255, 248, 240, 1);
 $color5: rgba(57, 47, 90, 1);
 
-$family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,
+$family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu,
   Cantarell, Roboto, Helvetica, Arial, Noto Sans, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-$family-secondary: "Black Han Sans", "Alegreya", sans-serif;
+$family-secondary: 'Black Han Sans', 'Alegreya', sans-serif;
 $grey-dark: $color5;
 $grey-light: $color1;
 $primary: $color2;
@@ -27,7 +27,7 @@ $fullhd-enabled: false;
 $body-background-color: $color4;
 $control-border-width: 2px;
 
-@import "../../node_modules/bulma/bulma.sass";
+@import '../../node_modules/bulma/bulma.sass';
 
 .title,
 h1 {
@@ -185,17 +185,17 @@ a.navbar-item,
   }
 }
 
-.hoverable figure img {
+.hoverable figure picture img {
   -webkit-transform: rotate(-1deg) scale(1.1);
   transform: rotate(-1deg) scale(1.1);
 
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.9;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out !important;
+  transition: 0.5s ease-in-out !important;
 }
-.hoverable figure:hover img {
+.hoverable figure:hover picture img {
   -webkit-transform: rotate(0deg) scale(1.15);
   transform: rotate(0deg) scale(1.15);
 
